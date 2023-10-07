@@ -1,0 +1,80 @@
+ {
+    "info": {
+        "id": "343512",
+        "name": "Navya Grand",
+        "cloudinaryImageId": "gwsv73b4gujodkgsswe6",
+        "locality": "Vinayak Nagar",
+        "areaName": "Lakshmipuram",
+        "costForTwo": "₹350 for two",
+        "cuisines": [
+            "Biryani",
+            "South Indian",
+            "Tandoor",
+            "North Indian",
+            "Chinese"
+        ],
+        "avgRating": 4,
+        "feeDetails": {
+            "restaurantId": "343512",
+            "fees": [
+                {
+                    "name": "BASE_DISTANCE",
+                    "fee": 2500
+                },
+                {
+                    "name": "BASE_TIME"
+                },
+                {
+                    "name": "ANCILLARY_SURGE_FEE"
+                }
+            ],
+            "totalFee": 2500
+        },
+        "parentId": "144917",
+        "avgRatingString": "4.0",
+        "totalRatingsString": "5K+",
+        "sla": {
+            "deliveryTime": 23,
+            "lastMileTravel": 5,
+            "serviceability": "SERVICEABLE",
+            "slaString": "23 mins",
+            "lastMileTravelString": "5.0 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2023-10-05 22:30:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "40% OFF",
+            "subHeader": "UPTO ₹80"
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {},
+    "cta": {
+        "link": "https://www.swiggy.com/restaurants/navya-grand-vinayak-nagar-lakshmipuram-guntur-343512",
+        "type": "WEBLINK"
+    },
+    "isPromoted": true
+}

@@ -1,0 +1,61 @@
+React Component 
+{
+    they are two types of react Component
+    (1) class Based Component -OLD
+    (2) functional Component -NEW
+}
+(2)functional Component
+{
+    note:a functional Component should be start with the capital letter 
+    ex:
+    {
+        const heading = ()=>
+        {
+            return <h1> namste react functional Component</h1>
+        }
+    }
+}
+Component composition??
+{
+    const Title= () => (
+<h1 className="head" tabIndex="5">
+  Namste React  using JSX  🚀
+  </h1>
+  );
+  const HeadingComponent2 = ()=> (
+    <div id="heading">
+      <Title/>
+      <h1> namste react Functional Component</h1>
+    </div>
+  )
+  component inside a component is know as component composition
+}
+//writting js inside a JSX
+{
+     const number=1000;
+     const HeadingComponent2 = ()=> (
+    <div id="heading">
+      <h1>{number}</h1>
+    </div>
+     )
+}
+//jsx takes care of mallicious data
+putting components in 3 ways
+{
+    const Title= () => (
+<h1 className="head" tabIndex="5">
+  {elem}
+  Namste React  using JSX  🚀
+  </h1>
+  );
+
+     const HeadingComponent2 = ()=> (
+    <div id="heading">
+      (1)<Title></Title>
+      (2)<Title/>
+      (3){Title()}
+      <h1> namste react Functional Component</h1>
+    </div>
+     
+  );
+}

@@ -1,0 +1,175 @@
+note: package.json is configuration for npm
+{webpack,
+parcel
+veet}->are bundle handlers
+they are two types of  dependencies in packages
+->dev dependencies
+->normal dependencies
+dev
+{
+    it is genrally required for in a development phase
+}
+normal
+{
+    used in production
+}
+What's the difference between tilde(~) and caret(^) in package.json?
+{
+    ~version “Approximately equivalent to version”, will update you to all future patch versions, without incrementing the minor version. ~1.2.3 will use releases from 1.2.3 to <1.3.0.
+^version “Compatible with version”, will update you to all future minor/patch versions, without incrementing the major version. ^1.2.3 will use releases from 1.2.3 to <2.0.0.
+}
+transitive dependencies
+{
+    the dependencies which one dependent on other
+}
+(Q)we need to push all of our dependencied to github respository??
+no
+(Q)we need to push package.json and package-lock.json to git respository??
+yes,beacause in thse json files we have all our dependices locked init what are versions we have we can install those dependencies by using simple commands npm install
+{npx parcel index.html}-> what this command do?
+npx means executing a package ,so we are executing parcel bundle in index.html file
+fetching react from cdn links  is costly operation and we should not do it.
+(cdn)-> Content Delivery Network
+- parcel
+dev build
+local server
+hmr(hot module replacment)
+file watching algorithm
+faster builds->using cache
+image optimization 
+minification
+compress
+bundling
+consistent hashing ()
+code spliting
+differential bundling
+daigonstic
+error handling
+HTTPS
+Tree Shaking-remove unused code
+note;
+{
+->to run an react application we use npx parcel index.html we can create short cut to it by add scripts
+"scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+}
+insted of npx parcel index.html-> we can write npm run start -> for development and
+npm run build -> for production.
+}
+code conversion
+{
+    //JSX - is not HTML in JS it is like an HTML like syntax or XML like syntax
+//JSX (traspaled before it reaches js)- parcel-babel
+JSX (babel)=>React.createElement => ReactElement - js object => HTMLElement(render)
+}
+if we need to give attributes to jsx we need to use camel case 
+Assignmet
+{
+    parcel documentation,
+    babel documentation,
+    attributes of jsx.
+}
+whenever a state variable updates ,react  triggers a reconcilation cycle(re-render the component);
+useEffect()-->
+{
+    if no dependency array=>useEffect is called on every render
+    if dependency array is empty= []=> useEffect is called on initisl render(just once);
+    if dependecny array has something then it called if it detect any changes in those dependency array elements.
+    
+}
+useState()
+{
+    useState() should be written inside the  component .
+    don not use useState hook inside a if else condition,for loops,functions
+}
+->createBrowserRouter ,RouterProvider
+{
+    path:
+    element:
+    children
+}
+->link tag to refresh page quickly.
+#2 types Routing in web apps
+-Client side Routing
+-Server side routing
+//NEVER UPDATE STATE VARIABLES DIRECTLY
+//life cycle of react compone|class
+{
+    --when we load or render
+    --constructor
+    --render
+    --componentdidMount(we need to use api calls);
+    --componentdidupdate()
+}
+--single responsibility principle
+-
+{
+    chunking,
+    code spliting,
+    dynmaic bundling
+    lazy loading
+    on demand loading
+    dynmaic import
+}
+inbuilt css frameworks
+{
+    bootstrap
+    material ui
+    chakra ui
+    ant design
+}
+{
+    -higher order componets
+  uncontrolled vs controlled components
+  lifiting the state up(using accordians)
+  props(transfer of data from one level to another nothing but passing data from tree to tail)
+  what if we have a large data we need to send from head to tail it is not a good practise so we introduce
+  contex-concept react whic is like a gloabal place which is available for oltfrom to all components 
+ --
+ <UserContext.Consumer>
+ {
+    (data)=>
+    {
+      this data consost of all golbal data that is created in context
+    }
+ }
+ <UserContext.Consumer/>
+ this is used for acessing context in class based components
+}
+redux is not a manditory thing
+write data from redux
+{
+when u click on the add button it disptaches an action which calles the reducer function whic updates the slice of our redux store
+}
+read data from redux
+{
+    selector to read data from the store and slector wil modiffy the data from store(subscribing the store)
+}
+Redux ToolKit
+  -Instal @reduxjs/toolkit and react-redux
+  -build our store
+  -connect our store to our app
+  -Slice (cartSlice)
+  -dispatch(action)
+  --selector
+  
+
+  configStore is key to create a memory in redux
+  #types of testing (developer) ?
+    -unit testing(To Test a Part of the React Component in isolation we use this Testing)
+    -Integrating Testing(multiple componets talking together to test this type of scenario we use this testing)
+    -End to End Testing(testing the reacct application from user landing to user exiting out of page)
+
+--react testing library uses  JEST library which again uses javascript testing
+#Setting up Testing
+--Install React Testing library
+--Install JEST
+--Install babell dependencies
+--configure babel
+--Configure Parcel config file to disable babel transpilation
+---JEST configuration(npx jest --init)
+--Install jsdom
+-install  npm i -d @babel/preset-react(to woek jsx in our test code)
+
+
